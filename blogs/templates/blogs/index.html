@@ -1,0 +1,18 @@
+{% extends "blogs/base.html" %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-3">Share your voice with the world.</h1>
+
+        <p class="lead">
+            Start your personal blog and express your ideas, experiences, and stories.
+            Write posts about anything that inspires you, and build a space that reflects your journey and passions.
+        </p>
+
+        <a class="btn btn-lg btn-primary"
+           href="{% url 'users:register' %}"
+           role="button">
+            Get Started &raquo;
+        </a>
+    </div>
+{% endblock content %}

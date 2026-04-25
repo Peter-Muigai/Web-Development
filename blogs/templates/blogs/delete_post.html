@@ -1,0 +1,22 @@
+{% extends "blogs/base.html" %}
+{% block content %}
+    <p>Delete Post</p>
+
+    <p>Are you sure you want to delete the post?</p>
+
+    <div style="margin-bottom: 20px;">
+        <strong>{{ post.title }}</strong><br>
+        <small>{{ post.date_posted }}</small>
+        <p>{{ post.content }}</p>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" style="color: white; background-color: red;">
+            Yes, delete
+        </button>
+        <a href="{% url 'blogs:post' post.id %}">
+            <button type="button">Cancel</button>
+        </a>
+    </form>
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% extends "blogs/base.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">Posts</h2>
+
+<div class="list-group">
+    {% for post in posts %}
+        <a href="{% url 'blogs:post' post.id %}"
+           class="list-group-item list-group-item-action">
+
+            <h5 class="mb-1">{{ post.title }}</h5>
+            <small>By {{ post.author }} | {{ post.date_posted|date:"M d, Y" }}</small>
+
+        </a>
+    {% empty %}
+        <p>No posts available.</p>
+    {% endfor %}
+</div>
+
+<br>
+
+<a class="btn btn-primary" href="{% url 'blogs:new_post' %}">
+    Add New Post
+</a>
+
+{% endblock %}
