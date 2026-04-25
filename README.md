@@ -5,7 +5,12 @@ This project allows users to create, edit, and manage blog posts, with user auth
 
 ---
 
-## 🚀 Features
+## Live Demo
+You can access the deployed app here: [https://blog-1-vwkh.onrender.com/]
+
+---
+
+##  Features
 
 * User registration and authentication
 * Create, edit, and delete blog posts
@@ -16,7 +21,7 @@ This project allows users to create, edit, and manage blog posts, with user auth
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * Django
@@ -27,7 +32,7 @@ This project allows users to create, edit, and manage blog posts, with user auth
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone the repository
 
